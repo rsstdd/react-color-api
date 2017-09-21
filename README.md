@@ -1,5 +1,11 @@
 # React-Color API
 
+> https://react-color-api.herokuapp.com/
+
+```
+GET /colors
+```
+
 ```
 npm install --save
 
@@ -31,3 +37,4 @@ npm start-dev
 ```
 npm start
 ```
+
