@@ -16,6 +16,9 @@
     "node",
     "express"
   ],
+  "engines": {
+    "node": "v7.10.0"
+  },
   "author": "Ross Todd <rosstod@gmail.com>",
   "license": "ISC",
   "dependencies": {
