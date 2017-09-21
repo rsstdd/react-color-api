@@ -1,10 +1,14 @@
 # React-Color API
 
+## API
+
 > https://react-color-api.herokuapp.com/
 
 ```
 GET /colors
 ```
+
+## Get Started:
 
 ```
 npm install --save
@@ -15,7 +19,7 @@ npm install --save
 ```
 CREATE DATABASE react_color_dev;
 
-```
+```w
 ## Migrate Tables
 ```
 npm run knex --knexfile=./api/knex/knexfile.js migrate:latest
