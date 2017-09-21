@@ -1,0 +1,33 @@
+{
+  "name": "react-color-api",
+  "version": "1.0.0",
+  "description": "API for React-Color Project",
+  "main": "index.js",
+  "scripts": {
+    "knex": "knex --knexfile=./api/knex/knexfile.js",
+    "heroku-postbuild": "knex migrate:latest",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "nodemon index.js",
+    "start": "node index.js",
+    "nf": "nf start"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Ross Todd <rosstod@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "boom": "^5.2.0",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "humps": "^2.0.1",
+    "knex": "^0.13.0",
+    "nodemon": "^1.12.1",
+    "pg": "^7.3.0"
+  },
+  "devDependencies": {
+    "foreman": "^2.0.0"
+  }
+}
