@@ -6,6 +6,8 @@
 
 ```
 GET /colors
+GET /colors/:id
+GET /colors/hue color=${color}
 ```
 
 ## Get Started:
@@ -15,10 +17,9 @@ npm install --save
 
 ```
 
-### Create Database:
+### Create Database (postgreSQL):
 ```
 CREATE DATABASE react_color_dev;
-
 ```
 
 ### Migrate Tables:

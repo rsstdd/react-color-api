@@ -13,7 +13,7 @@ const getColors = (_req, res, next) => {
     });
 };
 
-const getColorById = (_req, res, next) => {
+const getColorById = (req, res, next) => {
   const id = Number.parseInt(req.params.id);
   
   if (Number.isNaN(id)) return next();
@@ -22,7 +22,24 @@ const getColorById = (_req, res, next) => {
     .where('id', id)
     .first()
     .then((rows) => {
-      if (!row) throw boom.create(404, 'Not Found');
+      if (!rows) throw boom.create(404, 'Not Found');
+
+      const color = camelizeKeys(rows);
+
+      res.send(color);
+    })
+    .catch((err) => {
+      next(err);
+    });
+};
+
+const getColorByHue = (req, res, next) => {
+  const { color } = req.body;
+
+  knex('colors')
+    .where('color', color)
+    .then((rows) => {
+      if (!rows) throw boom.create(404, 'Not Found');
 
       const color = camelizeKeys(rows);
 
@@ -35,5 +52,6 @@ const getColorById = (_req, res, next) => {
 
 module.exports = {
   getColors,
-  getColorById
+  getColorById,
+  getColorByHue
 }
