@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "knex": "knex --knexfile=./api/knex/knexfile.js",
-    "heroku-postbuild": "knex --knexfile=./api/knex/knexfile.js migrate:latest;
-      knex --knexfile=./api/knex/knexfile.js seed:run",
+    "heroku-postbuild": "knex --knexfile=./api/knex/knexfile.js migrate:latest && knex --knexfile=./api/knex/knexfile.js seed:run",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "nodemon index.js",
     "start": "node index.js",
