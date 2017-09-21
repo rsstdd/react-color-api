@@ -15,17 +15,18 @@ npm install --save
 
 ```
 
-## Create Database 
+## Create Database:
 ```
 CREATE DATABASE react_color_dev;
 
-```w
-## Migrate Tables
+```
+
+## Migrate Tables:
 ```
 npm run knex --knexfile=./api/knex/knexfile.js migrate:latest
 ```
 
-## Seed DB
+## Seed DB:
 ```
 npm run knex --knexfile=./api/knex/knexfile.js seed:run
 ```
@@ -34,11 +35,7 @@ npm run knex --knexfile=./api/knex/knexfile.js seed:run
 
 ## Development
 ```
-npm start-dev
-```
-
-## Production
-```
 npm start
 ```
+
 
