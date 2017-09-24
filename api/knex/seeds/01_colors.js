@@ -54,8 +54,8 @@ exports.seed = function (knex) {
         },
         {
           id: 11,
-          hex: '#dla827',
-          color: 'yellow'
+          hex: '#a6a6a6',
+          color: 'gray'
         },
         {
           id: 12,
@@ -430,7 +430,7 @@ exports.seed = function (knex) {
         {
           id: 86,
           hex: '#655b3f',
-          color: 'gray'
+          color: 'brown'
         },
         {
           id: 87,
@@ -455,7 +455,7 @@ exports.seed = function (knex) {
         {
           id: 91,
           hex: '#688a42',
-          color: 'gray'
+          color: 'green'
         },
         {
           id: 92,
