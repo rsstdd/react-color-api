@@ -369,7 +369,7 @@ exports.seed = function (knex) {
         },
         {
           id: 74,
-          hex: '##8ed857',
+          hex: '#8ed857',
           color: 'green'
         },
         {
